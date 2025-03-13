@@ -6010,6 +6010,7 @@ function FnFileSystemConfigurationGet(pool = { name, id, readonly: false }, file
                                 filesystem.property.value = "No ACL";
                                 break;
                             case "posixacl":
+                            case "posix":
                                 filesystem.property.value = "POSIX ACL";
                                 break;
                             default:
@@ -7399,6 +7400,7 @@ function FnFileSystemConfigurationInheritedPropertyGet(pool = { name, id }, file
                     filesystem.properties.value = "Passthrough-X";
                     break;
                 case "posixacl":
+                case "posix":
                     filesystem.properties.value = "POSIX ACL";
                     break;
                 case "sa":
